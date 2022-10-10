@@ -21,15 +21,24 @@ let myTodoList = [];
 // add three todo items to the array using a built-in array method
 myTodoList.push('Watch', 'Lab', 'Test');
 console.log(myTodoList);
+
 // remove the second item in the array
+myTodoList.splice(1, 1);
+console.log(myTodoList);
 
 // create another array, yourTodoList, and add two todo items
+let yourTodoList = ['Eat', 'Sleep'];
 
 // create another array, ourTodoList
+let ourTodoList = [];
+
 // combine myTodoList and yourTodoList into ourTodoList
-
+ourTodoList = myTodoList.concat(yourTodoList);
+console.log(ourTodoList);
 // sort the following array from Z-A
-
+ourTodoList.sort();
+ourTodoList.reverse();
+console.log(ourTodoList);
 // create a function called reverse that takes in parameter
 // this function will return the opposite of whatever is passed in
 // if its a boolean, return the opposite
