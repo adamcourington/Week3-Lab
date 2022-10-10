@@ -39,15 +39,33 @@ console.log(ourTodoList);
 ourTodoList.sort();
 ourTodoList.reverse();
 console.log(ourTodoList);
+
 // create a function called reverse that takes in parameter
 // this function will return the opposite of whatever is passed in
 // if its a boolean, return the opposite
 // if its a number, or a string, return the reverse (i.e. 1234 becomes 4321, Name becomes emaN)
 // if its an array, return the reversed array with each element reversed
+function reverse(x) {
+  if (x === true) {
+    return false;
+  } else if (x === false) {
+    return true;
+  } else if (typeof x === 'string' || typeof x === 'number') {
+    let string = x.toString();
+    let splitX = string.split('');
+    let reverseX = splitX.reverse();
+    let rejoinX = reverseX.join('');
+    return rejoinX;
+  } else {
+    x = [];
+    for (let i = 0; i < 4; i++) return x[i];
+  }
+}
+console.log(reverse(['Adam', 'Chris', 'Tom']));
 
 // create a function called addingMachine that will add all passed numbers and return the total
 // Note: you don't know how many numbers will be passed
-
+function addingMachine() {}
 // You just signed a contract as an estimator for a restoration company.
 // Your contract states that you take home 10% of the profits on the first $100,000
 // 20% on the next $400,000
